@@ -4,7 +4,9 @@
 Easily unpack C Structs and binary buffers
 
 Based off the `unpack` function in Perl, and inspired by [prustat][1]
-by [Brendan Gregg][2].
+by [Brendan Gregg][2].  There were other modules that claimed to do the same functionality,
+but most of them were too poorly documented with the source code almost unreadable, while the
+others were overcomplicated and didn't support a simple format string.
 
 Install
 ------
