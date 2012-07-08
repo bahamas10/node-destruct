@@ -1,0 +1,18 @@
+{
+  "author": "Dave Eddy <dave@daveeddy.com> (http://www.daveeddy.com)",
+  "name": "destruct",
+  "description": "Easily unpack C Structs and binary buffers",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/bahamas10/node-destruct.git",
+    "type": "git"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [ "binary", "struct", "c types", "unpack" ]
+}
