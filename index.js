@@ -37,7 +37,7 @@ module.exports.unpack = function(fmt, buf, pos) {
       if (type == +type) {
         // A length is given
         length = (length) ? length+type : ''+type;
-        continue;
+        if (i !== fmt.length - 1) continue;
       }
       length = +length || 1;
 
@@ -49,6 +49,7 @@ module.exports.unpack = function(fmt, buf, pos) {
 
       // Push the data
       ret.push(data);
+      if (i === fmt.length - 1) return ret;
       // reset
       flag = null, length = null, data = null;
     }
