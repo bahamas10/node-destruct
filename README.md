@@ -42,12 +42,10 @@ Example
 
 ``` js
 var destruct = require('destruct'),
-    fs = require('fs'),
-    fmt = 'iiiiiiiiiiIiiiiSSa8a8a8Z16Z80iiIIaa3iiiiii',
-    file = '/proc/self/psinfo';
+    fs = require('fs');
 
-fs.readFile(file, function(err, buf) {
-  console.log(destruct.unpack(fmt, buf));
+fs.readFile('/proc/self/psinfo', function(err, buf) {
+  console.log(destruct.unpack('iiiiiiiiiiIiiiiSSa8a8a8Z16Z80iiIIaa3iiiiii', buf));
 });
 ```
 
